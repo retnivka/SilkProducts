@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Нить — шёлковые изделия</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/Vector.svg">
+  </head>
+  <body>
+    <div class="blur"></div>
+
+    <header class="header">
+      <div class="hs1"></div>
+      <div class="hs2">
+        <nav>
+          <a href="./index.html">Каталог</a>
+          <a href="./about.html">О нас</a>
+          <a id="contacts-link" href="#contacts">Контакты</a>
+        </nav>
+        <a href="./cart.html"><img src="./img/carticon.svg" alt="cart" /></a>
+      </div>
+      <div class="hs0"></div>
+    </header>
+
+    <main class="cart__box">
+      <div class="hs0"></div>
+
+      <div class="cart__container">
+
+      </div>
+      <div class="hs0"></div>
+    </main>
+
+    <div class="cart__container">
+      <div class="cart__sum">
+        <p>Итого:</p>
+        <h1>0,00 ₽</h1>
+      </div>
+      <div class="cart__button">
+        <button id="open-modal" class="button">Оформить заказ!</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Оформление заказа</h1>
+        <div class="formmid">
+          <div class="map">
+            <label> Пункт самовывоза:</label>
+            <label><img src="./img/clock.svg" alt="" />10:00 — 21:00</label>
+            <label
+              ><img src="./img/point.svg" alt="" />Лиговский пр., 283,
+              Санкт-Петербург, 196084</label
+            >
+          </div>
+
+          <div class="formmodal">
+            <div style="margin-left: 0%"><a href="https://yandex.ru/maps/org/sankt_peterburgskiy_gosudarstvenny_universitet_promyshlennykh_tekhnologiy_i_dizayna/1329680525/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербургский государственный университет промышленных технологий и дизайна</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Санкт‑Петербурге</a><iframe src="https://yandex.ru/map-widget/v1/?display-text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9%20%D0%B8%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0&ll=30.351482%2C59.918473&mode=search&oid=1329680525&ol=biz&sctx=ZAAAAAgBEAAaKAoSCVQaMbPPaz5AEYDvNm%2Bc8k1AEhIJCyqqfqVz6T8Rxty1hHzQzT8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0Ba86258IBhwGNoYX6BNLO098EzKr%2F7Abpsbq2BKOf8eIDkJX%2F3gPrkdvjA63n06jrBY7ZrJQ8ufXK6QWV7r%2FCmALhtZmRBemlgb32Aui%2Fgfi4Bu3N6I%2BQB7zT5u4D34qE7ZAGg%2FDWjIoCoPSr4gOkgr2tgwK%2FxqSEBNPouNWAAYXPhtwG%2F%2FeGnATk9u7h3waCAhgoKGNoYWluX2lkOig3MzIxODU3MzcpKSmKAgCSAgCaAgxkZXNrdG9wLW1hcHOqAgk3MzIxODU3MzewAgE%3D&sll=30.351482%2C59.918473&sspn=0.110397%2C0.044100&text=%7B%22text%22%3A%22%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9%20%D0%B8%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%22732185737%22%5D%7D%5D%7D&z=13.71" width="600" height="400" frameborder="1" allowfullscreen="true" margin-top-20 style="position:relative;"></iframe></div>
+            <form
+              class="forminputs"
+              action="https://formspree.io/f/mdoqbqyv"
+              method="POST"
+            >
+              <label for="input1">Ваш номер телефона:</label><br />
+              <input
+                minlength="10" maxlength="12"
+                class="input__form"
+                type="tel"
+                id="input1"
+                name="phone_number"
+              /><br />
+              <label for="input2">Ваш почтовый адрес:</label><br />
+              <input
+                class="input__form"
+                type="email"
+                id="input2"
+                name="email"
+              /><br />
+
+              <div class="caution">
+                <p>
+                  *в течении двух дней с Вами свяжутся по почте для уточнения
+                  желаемой даты доставки
+                </p>
+
+                <p>
+                  **оплата производится наличными или любой банковской картой
+                  при получении
+                </p>
+              </div>
+              <textarea id="list" name="message"></textarea>
+              <button type="submit" id="open-modal" class="button">
+                Оформить заказ!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contacts" class="footer__box">
+      <div class="fr1">
+        <div id="displaynone" class="fb2"></div>
+        <div class="fb1">
+          <nav class="social">
+            <a href="./index.html"><img src="./img/ig.svg" alt="" /></a>
+            <a href="./index.html"><img src="./img/wp.svg" alt="" /></a>
+            <a href="./index.html"><img src="./img/tg.svg" alt="" /></a>
+          </nav>
+          <a href=""><img id="logofiilet" src="./img/logo.svg" alt="" /></a>
+        </div>
+        <div class="fb2"></div>
+      </div>
+
+      <div class="fr2">
+        <div id="gesigner__name" class="fb1">
+          <h4>Design by Skornyakova Elena</h4>
+        </div>
+        <div class="fb2"></div>
+      </div>
+
+      <div class="fr3">
+        <div class="fb1"></div>
+        <div class="fb2"></div>
+      </div>
+    </footer>
+
+    <div style="height: 420px;" class="blurline"></div>
+  </body>
+
+  <style>
+    @media (max-width: 1024px) {
+      #contacts {
+        display: none;
+      }
+
+      .blurline {
+        display: none;
+      }
+
+      #contacts-link {
+        display: none;
+      }
+
+    }
+    @media (max-width: 768px) {
+      #contacts {
+        display: none;
+      }
+
+      .blurline {
+        display: none;
+      }
+
+      #contacts-link {
+        display: none;
+      }
+      
+    }
+  </style>
+
+  <script src="./script.js"></script>
+  <script src="./cart.js"></script>
+</html>

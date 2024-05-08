@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Нить — шёлковые изделия</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/Vector.svg">
+  </head>
+  <body>
+    <header class="header">
+      <div class="hs1"></div>
+      <div class="hs2">
+        <nav>
+          <a href="./index.html">Каталог</a>
+          <a href="./about.html">О нас</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="./cart.html"><img src="./img/carticon.svg" alt="cart" /></a>
+      </div>
+      <div class="hs0"></div>
+    </header>
+
+    <div class="thin__box">
+      <div class="hs1"></div>
+
+      <div class="item__box">
+        <div class="item__left">
+          <img src="./img/item3.png" alt="" />
+        </div>
+        <div class="item__right">
+          <div class="item__desc-top">
+            <h1>Наволочка на подушку большая</h1>
+            <br />
+            <div class="good-text">
+              Шёлковая бьюти-наволочка позаботится о&nbsp;вашей коже
+              и&nbsp;волосах во&nbsp;время сна. Благодаря своей нежной
+              и&nbsp;гладкой поверхности, шелковая ткань уменьшает трение,
+              оказывая уходовое воздействие на&nbsp;кожу лица.
+            </div>
+            <br />
+            <div class="good-text">
+              Она предотвращает спутывание и&nbsp;повреждение волос, придает
+              волосам естественный блеск.
+            </div>
+          </div>
+          <div class="item__desc-bottom">
+            <div class="item__desc-bottom-left">
+              <div class="size">
+                <p>Размер:</p>
+                <h3>50 x 70 см</h3>
+              </div>
+              <h1>3600 р.</h1>
+            </div>
+            <div class="item__desc-bottom-right">
+              <div class="counter-item">
+                <button class="button__item-min">-</button>
+                <input class="input__item" value="0" />
+                <button class="button__item-pls">+</button>
+              </div>
+              <button class="button__item">в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hs0"></div>
+    </div>
+
+    <footer id="contacts" class="footer__box">
+      <div class="fr1">
+        <div id="displaynone" class="fb2"></div>
+        <div class="fb1">
+          <nav class="social">
+            <a href="./index.html"><img src="./img/ig.svg" alt="" /></a>
+            <a href="./index.html"><img src="./img/wp.svg" alt="" /></a>
+            <a href="./index.html"><img src="./img/tg.svg" alt="" /></a>
+          </nav>
+          <a href=""><img id="logofiilet" src="./img/logo.svg" alt="" /></a>
+        </div>
+        <div class="fb2"></div>
+      </div>
+
+      <div class="fr2">
+        <div id="gesigner__name" class="fb1">
+          <h4>Design by Skornyakova Elena</h4>
+        </div>
+        <div class="fb2"></div>
+      </div>
+
+      <div class="fr3">
+        <div class="fb1"></div>
+        <div class="fb2"></div>
+      </div>
+    </footer><div class="blurline"></div>
+  </body>
+  <script src="./cart.js"></script>
+  <script>
+    document.querySelectorAll(".counter-item").forEach(function (counter) {
+      const input = counter.querySelector(".input__item");
+      const plusButton = counter.querySelector(".button__item-pls");
+      const minusButton = counter.querySelector(".button__item-min");
+
+      plusButton.addEventListener("click", function () {
+        input.value = parseInt(input.value) + 1;
+      });
+
+      minusButton.addEventListener("click", function () {
+        if (parseInt(input.value) > 0) {
+          input.value = parseInt(input.value) - 1;
+        }
+      });
+    });
+  </script>
+</html>
