@@ -37,7 +37,7 @@ img {
 
 html,
 body {
-  min-width: 768px;
+  min-width: 320px;
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
