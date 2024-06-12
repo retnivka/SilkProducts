@@ -41,7 +41,7 @@ function displayCart() {
   const cartContainer = document.querySelector(".cart__container");
   const cartButton = document.querySelector(".cart__button");
   let cartItemsHTML = "";
-  
+
   if (shoppingCart.length === 0) {
     cartButton.style.display = 'none';
   } else {
@@ -51,10 +51,10 @@ function displayCart() {
     cartItemsHTML += `
       <div class="card">
         <div class="card__left">
-          <img src="${item.image}" alt="" />
+          <img src="${item.image}" alt=""/>
         </div>
         <div class="card__right">
-          <h1>${item.name} (${item.size})</h1>
+          <h1>${item.name}</h1>
           <div class="size">
             <p>Размер:</p>
             <h3>${item.size}</h3>
@@ -62,9 +62,8 @@ function displayCart() {
           <div class="card__right-bottom">
             <div class="counter">
               <button class="button__item-min" onclick="updateQuantity(${index}, -1)">-</button>
-              <input class="input__item" value="${
-                item.quantity
-              }" onchange="updateQuantity(${index}, 0, this.value)"/>
+              <input class="input__item" value="${item.quantity
+      }" onchange="updateQuantity(${index}, 0, this.value)"/>
               <button class="button__item-pls" onclick="updateQuantity(${index}, 1)">+</button>
             </div>
             <h1>${item.price * item.quantity} р.</h1>

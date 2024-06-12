@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=768, initial-scale=1" />
+    <meta name="viewport" content="width=320, initial-scale=1" />
     <title>Нить — шёлковые изделия</title>
     <link rel="shortcut icon" type="image/x-icon" href="/img/Vector.svg">
     <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
@@ -21,189 +21,190 @@
       }
     </style>
   </head>
+  <img id="bg-image" src="img/bg-cart.png" alt="">
   <body>
-    <div class="blur"></div>
-    <header class="header">
-      <div class="hs1"></div>
-      <div class="hs2">
-        <nav>
-          <a href="./index.html">Каталог</a>
-          <a href="./about.html">О нас</a>
-          <a href="#contacts">Контакты</a>
-        </nav>
-        <a href="./cart.html"><img src="./img/carticon.svg" alt="cart" /></a>
+    <main>
+      <div class="blur"></div>
+      <header class="header">
+        <div class="hs1"></div>
+        <div class="hs2">
+          <nav>
+            <a href="./index.html">Каталог</a>
+            <a href="./about.html">О нас</a>
+            <a href="./contacts.html">Контакты</a>
+          </nav>
+          <a class = "cart-img" href="./cart.html" style="margin-bottom: 5px;"><img src="./img/carticon.svg" alt="cart" /></a>
+        </div>
+        <div class="hs0"></div>
+      </header>
+
+      <div class="thin__box">
+        <div class="hs1" style="width: 26.7%;"></div>
+        <div class="tb0" id="inline2"><h1>О нас</h1></div>
+        <div class="tb0"></div>
+        <div class="hs0"></div>
+        <div class="hs0"></div>
       </div>
-      <div class="hs0"></div>
-    </header>
+      <div class="blurelipse"></div>
+      <main class="about__box">
+        <div class="hs1"></div>
+        <div class="ab0" id="ab320">
+          <div class="border-ab"> 
+          <p>
+            Представьте себе шепот нежных волокон шёлка, как&nbsp;прикосновение
+            к&nbsp;самим секретам красоты!
+          </p>
+          <br />
+          <h2>
+            <center>
+            Так вот, Нить&nbsp;&mdash; это магия, воплощённая в&nbsp;каждой
+            ниточке.
+            </center>
+          </h2>
+          <br />
+        <div class="ab0 ab-img-mob" id="ab320" style="display: none;"><img src="./img/about.png" alt="" /></div>
+          <p>
+            Шелковые наволочки, полотенца и&nbsp;резинки для&nbsp;волос&nbsp;&mdash;
+            это не&nbsp;просто предметы, это&nbsp;роскошь для&nbsp;всех наших любимых
+            клиентов.
+          </p>
 
-    <div class="thin__box">
-      <div class="hs1"></div>
-      <div class="tb0" id="inline2"><h1>О нас</h1></div>
-      <div class="tb0"></div>
-      <div class="hs0"></div>
-      <div class="hs0"></div>
-    </div>
-
-    <main class="about__box">
-      <div class="hs1"></div>
-      <div class="ab0">
-        <p>
-          Представьте себе шепот нежных волокон шёлка, как прикосновение
-          к&nbsp;самим секретам красоты!
-        </p>
-        <br />
-        <h2>
-          <center>
-          Так вот, Нить&nbsp;&mdash; это магия, воплощённая в&nbsp;каждой
-          ниточке.
-          </center>
-        </h2>
-        <br />
-        <p>
-          Шелковые наволочки, полотенца и&nbsp;резинки для волос&nbsp;&mdash;
-          это не&nbsp;просто предметы, это роскошь для всех наших любимых
-          клиентов.
-        </p>
-
-        <p>
-          Пусть ваши волосы будут обвиты нежностью, а&nbsp;кожа&nbsp;&mdash;
-          ласково прикоснется к&nbsp;шелковистой глади.
-        </p>
+          <p>
+            Пусть ваши волосы будут обвиты нежностью, а&nbsp;кожа&nbsp;&mdash;
+            ласково прикоснется к&nbsp;шелковистой глади.
+          </p>
+        </div>
       </div>
-      <div class="ab0"><img src="./img/about.png" alt="" /></div>
-      <div class="hs0"></div>
+        <div class="ab0 ab-img" id="ab320"><img src="./img/about.png" alt="" /></div>
+        <div class="hs0"></div>
+        </div>
+      </main>
+
+      <div id="thin__box0" class="thin__box">
+        <div class="tb0" id="inline3"><h1>О пользе шёлка</h1></div>
+        <div class="tb0"></div>
+        <div class="hs0"></div>
+      </div>
+
+      <div class="about__info-top">
+        <div class="hs0"></div>
+
+        <div class="ab3">
+          <h3>Экологичность</h3>
+          <img src="./img/icon1.svg" alt="" />
+          <span>Шёлковые ткани создаются <br /> из натуральных волокон шелкопряда</span>
+        </div>
+
+        <div class="ab3">
+          <h3>Воздухонепроницаемость</h3>
+          <img src="./img/icon2.svg" alt="" />
+          <span
+            >Шёлк позволяет коже дышать, не&nbsp;задерживает влагу и&nbsp;обеспечивает
+            комфортный микроклимат</span>
+        </div>
+
+        <div id="displaynone" class="ab3"></div>
+      </div>
+
+      <div class="about__info-bottom">
+        <div class="hs0"></div>
+
+        <div id="displaynone" class="ab3"></div>
+
+        <div class="ab3">
+          <h3>Гиппоаллергенность</h3>
+          <img src="./img/icon3.svg" alt="" />
+          <span>Шёлк не&nbsp;вызывает аллергии или&nbsp;раздражения кожи</span>
+        </div>
+
+        <div class="ab3">
+          <h3>Терморегуляция</h3>
+          <img src="./img/icon4.svg" alt="" />
+          <span
+            >Шелк подстраивается под&nbsp;температуру тела, обеспечивая комфорт в&nbsp;любое
+            время года</span
+          >
+        </div>
+      </div>
+
+      <div class="thin__box">
+        <div class="tb0" id="inline4"><h1>Уход за тканью</h1></div>
+        <div class="hs0"></div>
+        <div class="hs0"></div>
+      </div>
+
+      <div class="utils__line">
+        <div class="hs0"></div>
+        <div class="utils__line-box">
+          <div class="ab1-top">
+            <h1>Ручная стирка</h1>
+            <img src="./img/icon5.svg" alt="" />
+          </div>
+          <div class="ab1-bottom">
+            <p>
+              Используйте <b>ph — нейтральное</b> жидкое 
+              мыло и&nbsp;кондиционер. </p>
+             <p> 
+              Допускается использование детского мыла, и&nbsp;специальных средств
+              для&nbsp;стирки шелка. Можно изделие<b> замочить</b>
+              на&nbsp;несколько минут.
+            </p>
+          </div>
+        </div>
+        <div class="utils__line-box">
+          <div class="ab1-top">
+            <h1>Можно гладить</h1>
+            <img src="./img/icon6.svg" alt="" />
+          </div>
+          <div class="ab1-bottom">
+            <p>
+              Гладить шёлк нужно аккуратно&nbsp;&mdash; при&nbsp;
+              <b>низкой температуре</b>
+              с&nbsp;обратной стороны шёлковой ткани.
+            </p>
+
+            <p>
+              Желательно использовать режим &laquo;<b>шёлк</b>&raquo;
+              на&nbsp;утюге.
+            </p>
+          </div>
+        </div>
+        <div class="hs0"></div>
+      </div>
+
+      <div class="utils__line">
+        <div class="hs0"></div>
+        <div class="utils__line-box">
+          <div class="ab1-top">
+            <h1>
+              Взаимодействие</h1>
+              <img src="./img/icon7.svg" alt="" style=" padding-left: 10%;"/>
+          </div>
+          <h1 class="padding-about"> с другими средствами </h1>
+          <div class="ab1-bottom">
+            <p>
+              Не&nbsp;распыляйте <b>парфюм </b>или&nbsp;другие
+              <b>химические вещества</b>
+              на&nbsp;изделия.
+            </p>
+          </div>
+        </div>
+
+        <div class="utils__line-box">
+          <div class="ab1-top sushka">
+            <h1>Сушка</h1>
+            <img src="./img/icon8.svg" alt=""/>
+          </div>
+          <div class="ab1-bottom" style="margin-top: 40px ;">
+            <p>
+              После стирки просто встряхните изделие&nbsp;&mdash;
+              <b> не&nbsp;выкручивайте!</b>
+            </p>
+          </div>
+        </div>
+        <div class="hs0"></div>
+      </div>
     </main>
-
-    <div id="thin__box0" class="thin__box">
-      <div class="hs1"></div>
-      <div class="tb0" id="inline3"><h1>О пользе шёлка</h1></div>
-      <div class="tb0"></div>
-      <div class="hs0"></div>
-    </div>
-
-    <div class="about__info-top">
-      <div class="hs0"></div>
-
-      <div class="ab3">
-        <h3>Экологичность</h3>
-        <img src="./img/icon1.svg" alt="" />
-        <span>Шёлковые ткани создаются <br /> из натуральных волокон шелкопряда</span>
-      </div>
-
-      <div class="ab3">
-        <h3>Воздухонепроницаемость</h3>
-        <img src="./img/icon2.svg" alt="" />
-        <span
-          >Шёлк позволяет коже дышать, не задерживает влагу и обеспечивает
-          комфортный микроклимат</span
-        >
-      </div>
-
-      <div id="displaynone" class="ab3"></div>
-    </div>
-
-    <div class="about__info-top">
-      <div class="hs0"></div>
-
-      <div id="displaynone" class="ab3"></div>
-
-      <div class="ab3">
-        <h3>Гиппоаллергенность</h3>
-        <img src="./img/icon3.svg" alt="" />
-        <span>Шёлк не вызывает аллергии или раздражения кожи</span>
-      </div>
-
-      <div class="ab3">
-        <h3>Терморегуляция</h3>
-        <img src="./img/icon4.svg" alt="" />
-        <span
-          >Шелк подстраивается под температуру тела, обеспечивая комфорт в любое
-          время года</span
-        >
-      </div>
-    </div>
-
-    <div class="thin__box">
-      <div class="tb0" id="inline4"><h1>Уход за тканью</h1></div>
-      <div class="tb0"></div>
-      <div class="hs0"></div>
-      <div class="hs0"></div>
-    </div>
-
-    <div class="utils__line">
-      <div class="hs0"></div>
-      <div class="utils__line-box">
-        <div class="ab1-top">
-          <img src="./img/icon5.svg" alt="" />
-          <h1>Ручная стирка</h1>
-        </div>
-        <div class="ab1-bottom">
-          <p>
-            Допускается использование детского мыла, и&nbsp;специальных средств
-            для стирки шелка. Можно изделие<b> замочить</b>
-            на&nbsp;несколько минут.
-          </p>
-
-          <p>Ни&nbsp;в&nbsp;коем случае <b>нельзя тереть ткань.</b></p>
-        </div>
-      </div>
-      <div class="utils__line-box">
-        <div class="ab1-top">
-          <img src="./img/icon6.svg" alt="" />
-          <h1>Можно гладить</h1>
-        </div>
-        <div class="ab1-bottom">
-          <p>
-            Гладить шёлк нужно аккуратно&nbsp;&mdash; при
-            <b>низкой температуре</b>
-            с&nbsp;обратной стороны шёлковой ткани.
-          </p>
-
-          <p>
-            Желательно использовать режим &laquo;<b>шёлк</b>&raquo;
-            на&nbsp;утюге.
-          </p>
-        </div>
-      </div>
-      <div class="hs0"></div>
-    </div>
-
-    <div class="utils__line">
-      <div class="hs0"></div>
-      <div class="utils__line-box">
-        <div class="ab1-top">
-          <img src="./img/icon7.svg" alt="" />
-          <h1>
-            Взаимодействие <br />
-            со средствами
-          </h1>
-        </div>
-        <div class="ab1-bottom">
-          <p>
-            Не&nbsp;распыляйте <b>парфюм </b>или другие
-            <b>химические вещества</b>
-            на&nbsp;изделия.
-          </p>
-        </div>
-      </div>
-
-      <div class="utils__line-box">
-        <div class="ab1-top">
-          <img src="./img/icon8.svg" alt="" />
-          <h1>Сушка</h1>
-        </div>
-        <div class="ab1-bottom">
-          <p>
-            После стирки просто встряхните изделие&nbsp;&mdash;
-            <b> не&nbsp;выкручивайте!</b>
-          </p>
-
-          <p>Сушить стоит в&nbsp;горизонтальном виде.</p>
-        </div>
-      </div>
-      <div class="hs0"></div>
-    </div>
-
     <footer id="contacts" class="footer__box">
       <div class="fr1">
         <div id="displaynone" class="fb2"></div>
@@ -230,7 +231,6 @@
         <div class="fb2"></div>
       </div>
     </footer>
-    <div class="blurline"></div>
   </body>
   <script src="./anim.js"></script>
 
@@ -249,4 +249,10 @@
       });
     });
   </script>
+
+  <style>
+    .blurelipse {
+      top: 0;
+    }
+  </style>
 </html>

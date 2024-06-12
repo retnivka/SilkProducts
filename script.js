@@ -1,7 +1,6 @@
 document.getElementById("open-modal").addEventListener("click", function () {
   document.getElementById("modal").style.display = "block";
 });
-
 document
   .getElementsByClassName("close")[0]
   .addEventListener("click", function () {
@@ -15,6 +14,6 @@ window.addEventListener("click", function (event) {
 });
 
 var phoneInput = document.getElementById("input1");
-phoneInput.addEventListener("input", function() {
-    this.value = this.value.replace(/[^0-9]/g, "");
+phoneInput.addEventListener("input", function () {
+  this.value = this.value.replace(/[^0-9]/g, "");
 });
